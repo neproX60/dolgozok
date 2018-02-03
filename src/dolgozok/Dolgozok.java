@@ -20,10 +20,6 @@ public class Dolgozok {
                 case '1':
                     ab.lista();
                     break;
-                    
-                default:
-                    tovabb = false;
-                  
                 case '2':
                     System.out.print("Név: ");
                     nev = bill.nextLine();
@@ -34,8 +30,9 @@ public class Dolgozok {
                     bill.nextLine();
                     ab.uj(nev, szulido, fizetes);
                     break;
+                default:
+                    tovabb = false;
             }
         }
     }
-    
 }
