@@ -40,6 +40,12 @@ public class Dolgozok {
                     fnev = bill.nextLine();
                     ab.kiir(fnev);
                     break;
+                case '5':
+                    System.out.print("Százalék: ");
+                    int sz = bill.nextInt();
+                    bill.nextLine();
+                    ab.emel(sz);
+                    break;
                 default:
                     tovabb = false;
             }
